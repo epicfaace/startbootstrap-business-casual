@@ -163,7 +163,7 @@ gulp.task('sass', shell.task([
   ]));
 
 gulp.task('deploy', shell.task([
-    'git subtree push --prefix www origin gh-pages'    
+    'git subtree push --prefix www origin gh-pages2'    
 ]));
 
 gulp.task('deploy2', shell.task([
