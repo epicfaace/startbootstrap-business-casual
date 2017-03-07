@@ -4,9 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+$headerColor: #AA0000;
+
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background: url('https://lh3.googleusercontent.com/HH4kP7eqknWOrr3170Zzo34ZFmA1e4aGfyVNeBnptrTpy6JfHuYcfDoWqpxjt4_fzeQaf29LRrp3eASv51NCkkfp8HkvM2bYdA') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -20,15 +22,23 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-p {
+p, .p {
     font-size: 1.25em;
     line-height: 1.6;
     color: #000;
+}
+
+ul.p {
+    font-size: 1em;
+    margin-top: 15px;
+    li {
+        margin-bottom: 10px;
+    }
 }
 
 hr {
@@ -42,14 +52,15 @@ hr {
 }
 
 .navbar-brand {
-    text-transform: uppercase;
+    //text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
+    font-size: 200%;
 }
 
 .navbar-nav {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 3px;
 }
 
@@ -100,6 +111,10 @@ hr {
 .img-left {
     float: none;
     margin: 0 auto 0;
+    margin: 5px;
+    @media only screen and (min-width: 768px) {
+        width: 20%;
+    }
 }
 
 footer {
@@ -119,7 +134,7 @@ footer p {
         padding: 30px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
@@ -153,7 +168,10 @@ footer p {
     }
 
     .navbar-header {
-        display: none;
+        //display: none;
+        clear: both;
+        float: none;
+        margin: auto;
     }
 
     .navbar {
@@ -167,7 +185,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 10px;
     }
 
     .navbar-nav>li>a {
@@ -189,4 +207,25 @@ footer p {
         display: table;
         clear: both;
     }
+}
+
+
+@import 'navbar.scss';
+
+.absolute {
+    position: absolute;
+    top: 100%;
+    z-index: 50;
+
+    color: white;
+}
+
+.carousel {
+    //margin-bottom: 30px;
+}
+
+b {}
+
+blockquote {
+    font-style: italic;
 }
