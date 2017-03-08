@@ -8,7 +8,7 @@ $headerColor: #AA0000;
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('https://lh3.googleusercontent.com/HH4kP7eqknWOrr3170Zzo34ZFmA1e4aGfyVNeBnptrTpy6JfHuYcfDoWqpxjt4_fzeQaf29LRrp3eASv51NCkkfp8HkvM2bYdA') no-repeat center center fixed;
+    background: url('../img/Walkathon Image 2.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -25,6 +25,9 @@ h6 {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    &.notbold {
+        font-weight: initial;
+    }
 }
 
 p, .p {
@@ -44,6 +47,10 @@ ul.p {
 hr {
     max-width: 400px;
     border-color: #999999;
+}
+
+hr.short {
+    max-width: 200px;
 }
 
 .brand,
@@ -228,4 +235,17 @@ b {}
 
 blockquote {
     font-style: italic;
+}
+
+.teamGrid {
+    img {
+        margin: auto;
+    }
+}
+
+.btnCenter {
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
 }
