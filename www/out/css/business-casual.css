@@ -3,6 +3,16 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.containerImg { position: relative; width: 50%; }
+
+.image { display: block; width: 100%; height: auto; }
+
+.overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: .5s ease; background-color: #008CBA; }
+
+.containerImg:hover .overlay { opacity: 1; }
+
+.text { color: white; font-size: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+
 body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../img/Walkathon Image 2.png") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 700; letter-spacing: 1px; }
@@ -19,9 +29,9 @@ hr.short { max-width: 200px; }
 
 .brand, .address-bar { display: none; }
 
-.navbar-brand { font-weight: 900; letter-spacing: 2px; font-size: 200%; }
+.navbar-brand { font-weight: bold; letter-spacing: 2px; font-size: 200%; }
 
-.navbar-nav { text-transform: uppercase; font-weight: bold; letter-spacing: 3px; }
+.navbar-nav { text-transform: uppercase; font-weight: normal; letter-spacing: 1px; }
 
 .img-full { min-width: 100%; }
 
@@ -33,7 +43,7 @@ hr.short { max-width: 200px; }
 
 .tagline-divider { margin: 15px auto 3px; max-width: 250px; border-color: #999999; }
 
-.box { margin-bottom: 20px; padding: 30px 15px; background: #fff; background: rgba(255, 255, 255, 0.85); }
+.box { margin-bottom: 20px; padding: 30px 15px; background: #fff; background: rgba(255, 255, 255, 0.9); }
 
 .intro-text { text-transform: uppercase; font-size: 1.25em; font-weight: 400; letter-spacing: 1px; }
 
@@ -58,13 +68,21 @@ footer p { margin: 0; padding: 50px 0; }
   .navbar-nav > li > a { line-height: normal; }
   .navbar-nav { display: table; float: none; margin: 0 auto; table-layout: fixed; font-size: 1.25em; } }
 @media screen and (min-width: 1200px) { .box:after { content: ''; display: table; clear: both; } }
-.navbar-default { background: rgba(255, 255, 255, 0.5); }
+.navbar-default { background: #fa9c41; }
 
-.navbar-default .navbar-brand { color: #AA0000; }
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover { color: black; }
 
-.navbar-default .navbar-nav > li > a { color: #AA0000; }
+.navbar-default .navbar-nav > li > a { color: black; }
+.navbar-default .navbar-nav > li > a:hover { color: grey; }
+.navbar-default .navbar-nav > li > a.selected { font-weight: bold; color: grey; }
 
 .brandRight { font-size: 100%; vertical-align: bottom; float: right; display: block; }
+
+.teamGrid .index, .teamGrid .register { display: none; }
+
+.indexParent .teamGrid .index { display: block; }
+
+.registerParent .teamGrid .register { display: block; }
 
 .absolute { position: absolute; top: 100%; z-index: 50; color: white; }
 
@@ -75,5 +93,13 @@ blockquote { font-style: italic; }
 .btnCenter { margin: auto; display: block; text-decoration: none; margin-top: 30px; }
 
 .text-primary { color: #551a8b; }
+
+.modal { font-size: 80%; }
+.modal h1 { font-size: 20px; }
+.modal img { margin: 20px; clear: both; display: block; max-width: 100%; height: auto; }
+
+.cordInfoGrid h3 { text-transform: initial; font-size: 100%; }
+
+.normalCase { text-transform: initial; }
 
 /*# sourceMappingURL=business-casual.css.map */

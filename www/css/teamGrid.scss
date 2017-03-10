@@ -1,0 +1,18 @@
+.teamGrid {
+	.index, .register {
+		display: none;
+	}
+}
+
+.indexParent .teamGrid {
+	.index {
+		display: block;
+	}
+}
+
+.registerParent .teamGrid {
+	.register {
+		display: block;
+	}
+
+}

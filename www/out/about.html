@@ -10,6 +10,8 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -31,6 +33,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.js"></script>
+
+    <script>
+    $(function() {
+        var path = window.location.pathname;//.replace(".html","");
+        $(".navbar-nav a").each(function() {
+            if ("/"+$(this).attr("href") == path ||
+                ($(this).attr("href") == "index.html" && path == "/")) {
+                $(this).addClass("selected");
+            }
+        });
+    })
+    </script>
   <!-- partial -->
 
 <title>Chinmaya Tej Walkathon</title>
@@ -81,6 +98,9 @@
                     <li>
                         <a href="sponsorship.html">Sponsorship</a>
                     </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -94,29 +114,26 @@
         <div class="row box">
             <div class="">
                 <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">About <strong>CORD</strong>
-                    </h2>
-                    <hr>
+                <h3 class="notbold text-center">About <strong>CORD</strong></h3>
+                <hr class="notbold">
                 </div>
                 <p>
 
-                    <img class="img-responsive img-border img-left" src="img/cordusa.jpeg" alt="">
+                    
                     <hr class="visible-xs">
                     <blockquote>
+                    <img class="img-responsive img-border img-left" src="img/cordusa.jpeg" alt="">
                         "Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime."
                     </blockquote>
 <div class="clearfix"></div>
 <ul class="p">
-                    <li>CORD USA (Chinmaya Organization for Rehabilitation & Development) is a secular, non-profit that aims to help communities create a sustainable program to aid in their holistic welfare. CORD USA serves humanity regardless of race, religion, color, gender or nationality. CORD USA works closely with local communities as well as CORD in India to fulfill its mission.</li>
+                    <li>CORD USA (<b>Chinmaya Organization for Rehabilitation & Development</b>) is a secular non-profit that aims to help communities create a sustainable program to aid in their holistic welfare. CORD USA serves humanity regardless of race, religion, color, gender or nationality. CORD USA works closely with local communities as well as CORD in India to fulfill its mission.</li>
 
-                    <li>CORD USA has built a sustainable and replicable model by focusing on development (teaching people to earn a living) as opposed to welfare (e.g. donating food)</li><li>
+                    <li>CORD USA has built a sustainable and replicable model by <b>focusing on development</b> (teaching people to earn a living) as opposed to welfare (e.g. donating food).</li><li>
  
-                    The key success factor of CORD USA is their motto of Active Participation. The villager has to be willing to take the first step to transform his/her life and CORD USA will take 5 steps forward to assist the person.</li><li>
+                    The key success factor of CORD USA is their motto of <b>Active Participation.</b> The villager has to be willing to take the first step to transform his/her life and CORD USA will take 5 steps forward to assist the person.</li><li>
  
-                    Belief in one's ability to motivate another to change life-long thinking patterns and habits. CORDUSA enables the poor to transform their lives through programs driven by themselves on the simple premise that inspiration from within brings out the best in everyone. That’s what makes the program successful!</li>
- <li>
-We strive to facilitate integrated, sustainable social help programs in local communities and in the Indian subcontinent through processes of self-empowerment and enrichment.  </li>
+                    Belief in one's ability to motivate another to change life-long thinking patterns and habits. CORD USA <b>enables the poor to transform their lives</b> through programs driven by themselves on the simple premise that inspiration from within brings out the best in everyone. That's what makes the program successful!</li>
 </ul>
 <!--
 testimonials and programs.
@@ -126,21 +143,44 @@ testimonials and programs.
             </div>
  
 
+        <div class="row box">
+            <div class="">
+                <div class="col-xs-12 text-center">
+                <h3 class="notbold">What CORD <strong>Does</strong></h3>
+                <h4 class="notbold">Click on any image below:</h4>
+                <hr class="notbold">
+                </div>
+                <div class="col-xs-12 cordInfoGrid">
+                    <div class="col-xs-6 col-sm-4 text-center">
+                        <a href="cord1.html" rel="modal:open"><img class="img-responsive" src="http://cordusa.org/media/news/testimonials/img15.jpg"/>
+                        <h3 class="notbold">Mahila Mandal (Village Women's Support Group)</h3></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 text-center">
+                        <a href="cord2.html" rel="modal:open"><img class="img-responsive" src="http://www.cordusa.org/media/news/testimonials/img24.jpg"/>
+                        <h3 class="notbold">Child Care - Balwadi (Pre-School)</h3></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 text-center">
+                        <a href="cord3.html" rel="modal:open"><img class="img-responsive" src="http://www.cordusa.org/media/news/testimonials/img3A.jpg"/>
+                        <h3 class="notbold">Literacy Program</h3></a>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+
 
         <div class="row box">
             <div class="">
                 <div class="col-xs-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Learn <strong>more</strong>
-                    </h2>
-                    <hr>
                 </div>
                 <div class="col-xs-12">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/unKMjuZxG58" frameborder="0" allowfullscreen style="display:block; margin: auto"></iframe>
-                Learn more about CORDUSA at <a rel="_blank" href="http://cordusa.org">http://cordusa.org</a>
+                </div>
+                <div class="col-xs-12 text-center"><br><br>
+                Learn more about CORDUSA at <a target="_blank" href="http://cordusa.org">http://cordusa.org</a>
                 </div>
                 </div>
-</div>
+        </div>
 
 
 

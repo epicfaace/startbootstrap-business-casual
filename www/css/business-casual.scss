@@ -5,6 +5,47 @@
  */
 
 $headerColor: #AA0000;
+$headerColor: black;
+$headerColorHover: grey;
+
+.containerImg {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.containerImg:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -60,15 +101,15 @@ hr.short {
 
 .navbar-brand {
     //text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bold;
     letter-spacing: 2px;
     font-size: 200%;
 }
 
 .navbar-nav {
     text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
 
 .img-full {
@@ -99,7 +140,7 @@ hr.short {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.9);
 }
 
 .intro-text {
@@ -218,6 +259,7 @@ footer p {
 
 
 @import 'navbar.scss';
+@import 'teamGrid.scss';
 
 .absolute {
     position: absolute;
@@ -253,4 +295,32 @@ blockquote {
 .text-primary {
     //color: #337ab7;
     color: #551a8b;
+}
+
+
+
+.modal {
+    font-size: 80%;
+    //width: 100%;
+    h1 {
+        font-size: 20px;
+    }
+    img {
+        margin: 20px;
+        clear: both;
+        display: block;
+            max-width: 100%;
+            height: auto;
+    }
+}
+
+.cordInfoGrid {
+    h3 {
+        text-transform: initial;
+        font-size: 100%;
+    }
+}
+
+.normalCase {
+    text-transform: initial;
 }

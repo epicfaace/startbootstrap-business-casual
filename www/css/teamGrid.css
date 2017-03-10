@@ -1,0 +1,7 @@
+.teamGrid .index, .teamGrid .register { display: none; }
+
+.indexParent .teamGrid .index { display: block; }
+
+.registerParent .teamGrid .register { display: block; }
+
+/*# sourceMappingURL=teamGrid.css.map */

@@ -9,6 +9,8 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -30,6 +32,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.js"></script>
+
+    <script>
+    $(function() {
+        var path = window.location.pathname;//.replace(".html","");
+        $(".navbar-nav a").each(function() {
+            if ("/"+$(this).attr("href") == path ||
+                ($(this).attr("href") == "index.html" && path == "/")) {
+                $(this).addClass("selected");
+            }
+        });
+    })
+    </script>
   <!-- partial -->
 
 <title>Chinmaya Tej Walkathon - Sponsorship</title>
@@ -80,6 +97,9 @@
                     <li>
                         <a href="sponsorship.html">Sponsorship</a>
                     </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -92,6 +112,10 @@
 
         <div class="row box">
             <div class="">
+                <div class="col-xs-12">
+                    <h3 class="notbold text-center"><strong>Sponsor</strong>ship</h3>
+                    <hr class="notbold">
+                </div>
                 <div class="col-xs-12">
 <div class="entry-content">
         <p>Chinmaya Mission Alpharetta (CMA), Inc. is a non-profit 501©3 organization. It is a local chapter of the Chinmaya Mission®&nbsp; worldwide. Chinmaya Mission® is a spiritual and social service organization inspired by the philosophy and teachings of Vedanta. Our Tax Id is 26-3050415.</p>
@@ -175,43 +199,36 @@ Our Leaders</p>
             </div>
         </div>
 
-        <div class="row">
+ <!-- partial:./partial/contactSection.html -->
+          <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Contact
-                        <strong>form</strong>
-                    </h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                <label>Message</label>
-                                <textarea class="form-control" rows="6"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-xs-12">
+                    <h3 class="notbold text-center"><strong>Contact</strong> us</h3>
+                    <hr class="notbold">
                 </div>
+                <div class="col-xs-12 text-center">
+                    <div class="col-xs-12">
+                        For additional information, including sponsorships and booths, contact:<br><br>
+                    </div>
+                    <div class="col-xs-6">
+                        Arsu Veluswamy<br>
+                        <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:(404) 483-2778">(404) 483-2778</a>
+                    </div>
+                    <div class="col-xs-6">
+                        Madhu Katugulla<br>
+                        <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:(678) 451-8892">(678) 451-8892</a>
+                    </div>
+
+                <div class="col-xs-12"><br><br>
+                 <i class="fa fa-envelope" aria-hidden="true"></i> Email us at:
+                    <strong><a href="mailto:walkathon@chinmayamissionalpharetta.org">walkathon@chinmayamissionalpharetta.org</a></strong>
+                </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
+
+  <!-- partial -->
 
     </div>
     <!-- /.container -->

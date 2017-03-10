@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,qCAAkB,GACjB,OAAO,EAAE,IAAI;;AAKd,6BAAO,GACN,OAAO,EAAE,KAAK;;AAKf,mCAAU,GACT,OAAO,EAAE,KAAK",
+"sources": ["teamGrid.scss"],
+"names": [],
+"file": "teamGrid.css"
+}
