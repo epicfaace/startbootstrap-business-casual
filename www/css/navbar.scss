@@ -8,11 +8,24 @@
     background-color: $from;
 }
 
+$navBarHeight: 100px;
+
 
 .navbar-default {
  //@include radial-gradient(#ffff00, #FF9900);
  //background: rgba(255,255,255,.5);
  background: #fa9c41;
+}
+    body {
+        padding-top: 10px;
+    }
+@media only screen and (min-width:768px) {
+    .navbar-default {
+        height: $navBarHeight;
+    }
+    body {
+        padding-top: $navBarHeight;
+    }
 }
 
 .navbar-default  .navbar-brand {

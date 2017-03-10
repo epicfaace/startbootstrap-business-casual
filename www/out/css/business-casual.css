@@ -13,6 +13,10 @@
 
 .text { color: white; font-size: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 
+.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+
+.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
 body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../img/Walkathon Image 2.png") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 700; letter-spacing: 1px; }
@@ -70,11 +74,15 @@ footer p { margin: 0; padding: 50px 0; }
 @media screen and (min-width: 1200px) { .box:after { content: ''; display: table; clear: both; } }
 .navbar-default { background: #fa9c41; }
 
+body { padding-top: 10px; }
+
+@media only screen and (min-width: 768px) { .navbar-default { height: 100px; }
+  body { padding-top: 100px; } }
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover { color: black; }
 
 .navbar-default .navbar-nav > li > a { color: black; }
-.navbar-default .navbar-nav > li > a:hover { color: grey; }
-.navbar-default .navbar-nav > li > a.selected { font-weight: bold; color: grey; }
+.navbar-default .navbar-nav > li > a:hover { color: #ddee88; }
+.navbar-default .navbar-nav > li > a.selected { font-weight: bold; color: #ddee88; }
 
 .brandRight { font-size: 100%; vertical-align: bottom; float: right; display: block; }
 
