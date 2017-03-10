@@ -73,11 +73,11 @@ footer p { margin: 0; padding: 50px 0; }
   .navbar-nav { display: table; float: none; margin: 0 auto; table-layout: fixed; font-size: 1.25em; } }
 @media screen and (min-width: 1200px) { .box:after { content: ''; display: table; clear: both; } }
 .navbar-default { background: #fa9c41; }
+.navbar-default, .navbar-default * { border: none !important; }
 
-body { padding-top: 10px; }
-
-@media only screen and (min-width: 768px) { .navbar-default { height: 100px; }
-  body { padding-top: 100px; } }
+/*    body { padding-top: 10px; }
+@media only screen and (min-width:768px) { .navbar-default { height: $navBarHeight; } body { padding-top: $navBarHeight; }
+}*/
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover { color: black; }
 
 .navbar-default .navbar-nav > li > a { color: black; }

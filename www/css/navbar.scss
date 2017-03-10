@@ -15,8 +15,11 @@ $navBarHeight: 100px;
  //@include radial-gradient(#ffff00, #FF9900);
  //background: rgba(255,255,255,.5);
  background: #fa9c41;
+ &, * {
+    border: none !important;
+ }
 }
-    body {
+/*    body {
         padding-top: 10px;
     }
 @media only screen and (min-width:768px) {
@@ -26,7 +29,7 @@ $navBarHeight: 100px;
     body {
         padding-top: $navBarHeight;
     }
-}
+}*/
 
 .navbar-default  .navbar-brand {
     &, &:hover {

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$headerColor".
-        on line 33 of ./www/css/navbar.scss
+        on line 36 of ./www/css/navbar.scss
 
-28:     }
-29: }
-30: 
-31: .navbar-default  .navbar-brand {
-32:     &, &:hover {
-33: color: $headerColor;
-34: }
-35: }
-36: .navbar-default .navbar-nav>li>a {
-37:     color: $headerColor;
-38:     &:hover {
+31:     }
+32: }*\/
+33: 
+34: .navbar-default  .navbar-brand {
+35:     &, &:hover {
+36: color: $headerColor;
+37: }
+38: }
+39: .navbar-default .navbar-nav>li>a {
+40:     color: $headerColor;
+41:     &:hover {
 
 Backtrace:
-./www/css/navbar.scss:33
+./www/css/navbar.scss:36
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -78,4 +78,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$headerColor\".\A         on line 33 of ./www/css/navbar.scss\A \A 28:     }\A 29: }\A 30: \A 31: .navbar-default  .navbar-brand {\A 32:     &, &:hover {\A 33: color: $headerColor;\A 34: }\A 35: }\A 36: .navbar-default .navbar-nav>li>a {\A 37:     color: $headerColor;\A 38:     &:hover {"; }
+  content: "Error: Undefined variable: \"$headerColor\".\A         on line 36 of ./www/css/navbar.scss\A \A 31:     }\A 32: }*/\A 33: \A 34: .navbar-default  .navbar-brand {\A 35:     &, &:hover {\A 36: color: $headerColor;\A 37: }\A 38: }\A 39: .navbar-default .navbar-nav>li>a {\A 40:     color: $headerColor;\A 41:     &:hover {"; }
