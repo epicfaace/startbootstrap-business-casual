@@ -33,7 +33,7 @@ hr.short { max-width: 200px; }
 
 .tagline-divider { margin: 15px auto 3px; max-width: 250px; border-color: #999999; }
 
-.box { margin-bottom: 20px; padding: 30px 15px; background: #fff; background: rgba(255, 255, 255, 0.9); }
+.box { margin-bottom: 20px; padding: 30px 15px; background: #fff; background: rgba(255, 255, 255, 0.85); }
 
 .intro-text { text-transform: uppercase; font-size: 1.25em; font-weight: 400; letter-spacing: 1px; }
 
@@ -73,5 +73,7 @@ blockquote { font-style: italic; }
 .teamGrid img { margin: auto; }
 
 .btnCenter { margin: auto; display: block; text-decoration: none; margin-top: 30px; }
+
+.text-primary { color: #551a8b; }
 
 /*# sourceMappingURL=business-casual.css.map */
