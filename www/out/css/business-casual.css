@@ -110,4 +110,6 @@ blockquote { font-style: italic; }
 
 .normalCase { text-transform: initial; }
 
+.fowlerImages > div, .teamGrid > .box > div { margin-bottom: 30px; }
+
 /*# sourceMappingURL=business-casual.css.map */
