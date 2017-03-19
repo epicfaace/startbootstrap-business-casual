@@ -112,4 +112,8 @@ blockquote { font-style: italic; }
 
 .fowlerImages > div, .teamGrid > .box > div { margin-bottom: 30px; }
 
+.bigList { list-style-type: none; font-size: 20px; }
+.bigList li { margin-bottom: 20px; }
+.bigList input { float: right; text-align: right; width: 100px; }
+
 /*# sourceMappingURL=business-casual.css.map */

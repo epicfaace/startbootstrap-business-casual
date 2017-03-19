@@ -280,9 +280,22 @@
                     <h2 class="notbold text-center">
 
                     <span class="index">Meet the teams</span>
-                    <span class="register">Pick a team - <strong>Register now</strong></span>
+                    <span class="register"><strong>Register now</strong></span>
                     </h2>
                     <hr class="short">
+                    <ul class="bigList col-xs-12 col-sm-6 col-sm-offset-3">
+                        <li>How many adults?
+                            <input type="number" value="1" class="form-control input" id="numAdults" min="0">
+
+                        </li>
+                        <li>How many children 12 years and under?
+                            <input type="number" value="1" class="form-control input" id="numChildren" min="0">
+                        </li>
+                        <li id="totalCostLi">
+                            <h4>Total cost: $<span id="totalCost"></span></h4>
+                        </li>
+                        <li>Pick a team:</li>
+                    </ul>
                 </div>
                 <div class="teamDiv col-xs-6 col-sm-4 text-center">
                     <img class="img-responsive" src="img/intro-pic.jpg" alt="">

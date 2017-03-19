@@ -123,7 +123,19 @@
     <script>
     $('.carousel').carousel({
         interval: 1000 //changes the speed
-    })
+    });
+    function update() {
+        var adultCost = 20;
+        var childCost = 15;
+        if (new Date() > new Date("04/30/2017")) {
+            adultCost = 25;
+            childCost = 20;
+        }
+        $("#totalCost").show().text($("#numAdults").val()*adultCost
+            +$("#numChildren").val()*childCost);
+    };
+    update();
+    $('input.input').change(update);
     </script>
 
 </body>

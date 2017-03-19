@@ -342,3 +342,16 @@ blockquote {
 .fowlerImages > div, .teamGrid > .box > div {
     margin-bottom: 30px;
 }
+
+.bigList {
+    list-style-type: none;
+    font-size: 20px;
+    li {
+        margin-bottom: 20px;
+    }
+    input {
+        float: right;
+        text-align: right;
+        width: 100px;
+    }
+}
