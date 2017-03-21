@@ -100,7 +100,8 @@ footer p { margin: 0; padding: 50px 0; }
 
 .teamGrid { text-align: center; }
 .teamGrid .bigList { float: none; }
-.teamGrid .msg { font-size: 80%; }
+.teamGrid p, .teamGrid .msg, .teamGrid .bigList li { font-size: 80%; }
+.teamGrid .dropdown-menu { left: 50% !important; margin-left: -70px; }
 
 .totalCostLi { text-align: center; margin-bottom: 20px; }
 

@@ -201,7 +201,7 @@
 
 <div  class="registerParent">
                 <!-- partial:./partial/teamGrid.html -->
-                  <div  class="row teamGrid">
+                  <div  class="row teamGrid text-center">
             <div class="box">
             <a name="teams"></a>
                 <div class="col-lg-12">
@@ -254,12 +254,11 @@
                 </div>
             </div>
         </div>
-    </div>
 
 <div  class="row teamGrid">
             <div class="box">
             <a name="teams"></a>
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12">
                     
                     <h2 class="notbold text-center">
 
@@ -268,51 +267,63 @@
                     </h2>
 
                     <hr class="short">
-                    <h2 class="text-center notbold" style="color: #000044">Children:</h2><br>
-                    Note: Free for children under 5 years of age.<br>
-                  <div class="dropdown">
+                    <h2 class="text-center notbold" style="color: #000044">Children:</h2>
+                  
+                  <!--div class="dropdown dropdown-child">
                     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select age group
                     <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Elementary School (Grade 5 and below)</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Middle School (Grades 6-8)</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">High School (Grades 9-12)</a></li>
+                      <li role="presentation"><a role="menuitem" data-target=".ES" tabindex="-1" href="#/">Elementary School (Grade 5 and below)</a></li>
+                      <li role="presentation"><a role="menuitem" data-target=".MS" tabindex="-1" href="#/">Middle School (Grades 6-8)</a></li>
+                      <li role="presentation"><a role="menuitem" data-target=".HS" tabindex="-1" href="#/">High School (Grades 9-12)</a></li>
                     </ul>
-                  </div>
-                    <ul class="bigList col-xs-12 col-sm-6 col-sm-offset-3">
-                        <li>How many children?
-                            <input type="number" value="1" class="form-control input num"  min="0">
+                  </div-->
 
+                  
+
+                    <ul class="bigList col-xs-12 col-sm-8 col-sm-offset-2">
+                        <li>How many children? (age 12+)
+                            <input type="number" value="0" class="form-control input num" data-cost1="20" data-cost2="25" min="0">
+                            
                         </li>
-                        <li id="totalCostLi">
-                            <h4>Total cost: $<span id="totalCost"></span></h4>
+                        <li>How many children? (age 6-11)
+                            <input type="number" value="0" class="form-control input num" data-cost1="15" data-cost2="20" min="0">
+                            
                         </li>
-                        <li>Pick a team:</li>
+                        <p>Note: Free for children under 5 years of age.</p>
+                        <li class="totalCostLi">
+                            <button class="btn calculateTotal">Calculate total cost</button>
+                            <h4 class="showLater totalCostH4">Total cost: $<span class="totalCost"></span></h4>
+                        </li>
+                        <hr class="short showLater">
+                        <li class="msg showLater">Please contribute the amount shown above to the team registration page linked below:</li>
                     </ul>
                 </div>
-                <div class="teamDiv col-xs-6 col-sm-4 text-center">
-                    <img class="img-responsive" src="img/intro-pic.jpg" alt="">
-                    <h3 class="notbold">Team <b>Dhyana</b>
-                        <br><small>Kishore C</small>
+                <div class="teamDivContainer">
+                    <div class="childTab showLater ES teamDiv col-xs-6 col-sm-4 text-center">
+                        <img class="img-responsive" src="img/intro-pic.jpg" alt="">
+                        <h3 class="notbold">Team <b>Dhyana</b> (ES)
+                            <br><small>Kishore C</small>
 
-                    </h3>
-                    <a class="register" href="/"><h4>Join now!</h4></a>
+                        </h3>
+                        <a class="register" href="/"><h4>Join now!</h4></a>
+                    </div>
+                    <div class="childTab showLater MS teamDiv col-xs-6 col-sm-4 text-center">
+                        <img class="img-responsive" src="img/intro-pic.jpg" alt="">
+                        <h3 class="notbold">Team <b>Sankalpa</b> (MS)
+                            <br><small>Anjali M</small>
+                        </h3>
+                        <a class="register" href="/"><h4>Join now!</h4></a>
+                    </div>
+                    <div class="childTab showLater HS teamDiv col-xs-6 col-sm-4 text-center">
+                        <img class="img-responsive" src="img/intro-pic.jpg" alt="">
+                        <h3 class="notbold">Team <b>Karma</b> (HS)
+                            <br><small>Sudha M</small>
+                        </h3>
+                        <a class="register" href="/"><h4>Join now!</h4></a>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="teamDiv col-xs-6 col-sm-4 text-center">
-                    <img class="img-responsive" src="img/intro-pic.jpg" alt="">
-                    <h3 class="notbold">Team <b>Sankalpa</b>
-                        <br><small>Anjali M</small>
-                    </h3>
-                    <a class="register" href="/"><h4>Join now!</h4></a>
-                </div>
-                <div class="teamDiv col-xs-6 col-sm-4 text-center">
-                    <img class="img-responsive" src="img/intro-pic.jpg" alt="">
-                    <h3 class="notbold">Team <b>Karma</b>
-                        <br><small>Sudha M</small>
-                    </h3>
-                    <a class="register" href="/"><h4>Join now!</h4></a>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -361,12 +372,25 @@
         }
         $box.find(".showLater").slideDown();
         //$box.find(".teamDivContainer").slideDown();
-        $box.find(".totalCost").show().text($box.find(".num").val()*$box.find(".num").attr("data-cost"+cost));
+        var total = 0;
+        //$box.find(".num").val()*$box.find(".num").attr("data-cost"+cost)
+        $box.find(".num").each(function() {
+            total += $(this).val()*$(this).attr("data-cost"+cost)
+        })
+        $box.find(".totalCost").show().text(total);
+        $('html, body').animate({
+        scrollTop: $box.find(".register").offset().top
+        }, 500);
     };
-    update();
+    //update();
     $('input.input').change(update);
     $('input.input').keyup(update);
     $('.calculateTotal').click(update);
+
+    $(".dropdown-child a").click(function() {
+        $(".childTab").removeClass("showLater");
+        $($(this).data("target")).addClass("showLater");
+    });
     </script>
 
 </body>

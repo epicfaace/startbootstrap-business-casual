@@ -27,8 +27,12 @@
 			float: none;
 		}
 		text-align: center;
-		.msg {
+		p, .msg, .bigList li {
 			font-size: 80%;
+		}
+		.dropdown-menu {
+    left: 50% !important;
+    margin-left: -70px;
 		}
 	}
 

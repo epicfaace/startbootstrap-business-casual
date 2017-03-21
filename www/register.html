@@ -137,12 +137,25 @@
         }
         $box.find(".showLater").slideDown();
         //$box.find(".teamDivContainer").slideDown();
-        $box.find(".totalCost").show().text($box.find(".num").val()*$box.find(".num").attr("data-cost"+cost));
+        var total = 0;
+        //$box.find(".num").val()*$box.find(".num").attr("data-cost"+cost)
+        $box.find(".num").each(function() {
+            total += $(this).val()*$(this).attr("data-cost"+cost)
+        })
+        $box.find(".totalCost").show().text(total);
+        $('html, body').animate({
+        scrollTop: $box.find(".register").offset().top
+        }, 500);
     };
-    update();
+    //update();
     $('input.input').change(update);
     $('input.input').keyup(update);
     $('.calculateTotal').click(update);
+
+    $(".dropdown-child a").click(function() {
+        $(".childTab").removeClass("showLater");
+        $($(this).data("target")).addClass("showLater");
+    });
     </script>
 
 </body>
