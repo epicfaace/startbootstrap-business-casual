@@ -86,6 +86,8 @@ footer p { margin: 0; padding: 50px 0; }
 
 .brandRight { font-size: 100%; vertical-align: bottom; float: right; display: block; }
 
+.navbar-default .navbar-toggle .icon-bar { background-color: black; }
+
 .teamGrid .index, .teamGrid .register { display: none; }
 
 .indexParent .teamGrid .index { display: block; }
