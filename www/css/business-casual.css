@@ -49,7 +49,7 @@ hr.short { max-width: 200px; }
 
 .tagline-divider { margin: 15px auto 3px; max-width: 250px; border-color: #999999; }
 
-.box { margin-bottom: 20px; padding: 30px 15px; background: #fff; background: rgba(255, 255, 255, 0.9); }
+.box { margin-bottom: 20px; padding: 5px 15px; background: #fff; background: rgba(255, 255, 255, 0.9); }
 
 .intro-text { text-transform: uppercase; font-size: 1.25em; font-weight: 400; letter-spacing: 1px; }
 
@@ -131,6 +131,8 @@ footer p { margin: 0; padding: 50px 0; }
 @media only screen and (min-width: 769px) { .cordInfoGrid img { margin-bottom: 30px; } }
 
 #carousel-example-generic2 img { margin-bottom: 0px; }
+
+h4.date { margin-top: 20px; }
 
 .absolute { position: absolute; top: 100%; z-index: 50; color: white; }
 
