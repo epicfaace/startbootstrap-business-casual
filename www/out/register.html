@@ -211,14 +211,78 @@
                     <span class="index">Meet the teams</span>
                     <span class="register"><strong>Register now</strong></span>
                     </h2>
+
                     <hr class="short">
+                    <h2 class="text-center notbold" style="color: #000044">Adults:</h2><br>
                     <ul class="bigList col-xs-12 col-sm-6 col-sm-offset-3">
                         <li>How many adults?
-                            <input type="number" value="1" class="form-control input" id="numAdults" min="0">
-
+                            <input type="number" value="1" class="form-control input num" data-cost1="20" data-cost2="25" min="0">
+                            
                         </li>
-                        <li>How many children 12 years and under?
-                            <input type="number" value="1" class="form-control input" id="numChildren" min="0">
+                        <li class="totalCostLi">
+                            <button class="btn calculateTotal">Calculate total cost</button>
+                            <h4 class="showLater totalCostH4">Total cost: $<span class="totalCost"></span></h4>
+                        </li>
+                        <hr class="short showLater">
+                        <li class="msg showLater">Please contribute the amount shown above to the team registration page linked below:</li>
+                    </ul>
+                </div>
+                <div class="showLater teamDivContainer">
+                    <div class="teamDiv col-xs-6 col-sm-4 text-center">
+                        <img class="img-responsive" src="img/intro-pic.jpg" alt="">
+                        <h3 class="notbold">Team <b>Dhyana</b>
+                            <br><small>Kishore C</small>
+
+                        </h3>
+                        <a class="register" href="/"><h4>Join now!</h4></a>
+                    </div>
+                    <div class="teamDiv col-xs-6 col-sm-4 text-center">
+                        <img class="img-responsive" src="img/intro-pic.jpg" alt="">
+                        <h3 class="notbold">Team <b>Sankalpa</b>
+                            <br><small>Anjali M</small>
+                        </h3>
+                        <a class="register" href="/"><h4>Join now!</h4></a>
+                    </div>
+                    <div class="teamDiv col-xs-6 col-sm-4 text-center">
+                        <img class="img-responsive" src="img/intro-pic.jpg" alt="">
+                        <h3 class="notbold">Team <b>Karma</b>
+                            <br><small>Sudha M</small>
+                        </h3>
+                        <a class="register" href="/"><h4>Join now!</h4></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div  class="row teamGrid">
+            <div class="box">
+            <a name="teams"></a>
+                <div class="col-lg-12 text-center">
+                    
+                    <h2 class="notbold text-center">
+
+                    <span class="index">Meet the teams</span>
+                    <span class="register"><strong>Register now</strong></span>
+                    </h2>
+
+                    <hr class="short">
+                    <h2 class="text-center notbold" style="color: #000044">Children:</h2><br>
+                    Note: Free for children under 5 years of age.<br>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select age group
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Elementary School (Grade 5 and below)</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Middle School (Grades 6-8)</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">High School (Grades 9-12)</a></li>
+                    </ul>
+                  </div>
+                    <ul class="bigList col-xs-12 col-sm-6 col-sm-offset-3">
+                        <li>How many children?
+                            <input type="number" value="1" class="form-control input num"  min="0">
+
                         </li>
                         <li id="totalCostLi">
                             <h4>Total cost: $<span id="totalCost"></span></h4>
@@ -251,6 +315,7 @@
                 <div class="clearfix"></div>
             </div>
         </div>
+
                   <!-- partial -->
 </div>
 
@@ -284,17 +349,24 @@
         interval: 1000 //changes the speed
     });
     function update() {
+        var $box = $(this).closest(".box");
+        console.log($box.find(".num").attr('data-cost1'));
         var adultCost = 20;
         var childCost = 15;
-        if (new Date() > new Date("04/30/2017")) {
+        var cost = "1";
+        if (new Date() > new Date("05/01/2017")) {
             adultCost = 25;
             childCost = 20;
+            cost = "2";
         }
-        $("#totalCost").show().text($("#numAdults").val()*adultCost
-            +$("#numChildren").val()*childCost);
+        $box.find(".showLater").slideDown();
+        //$box.find(".teamDivContainer").slideDown();
+        $box.find(".totalCost").show().text($box.find(".num").val()*$box.find(".num").attr("data-cost"+cost));
     };
     update();
     $('input.input').change(update);
+    $('input.input').keyup(update);
+    $('.calculateTotal').click(update);
     </script>
 
 </body>

@@ -4,4 +4,14 @@
 
 .registerParent .teamGrid .register { display: block; }
 
+.showLater { display: none; }
+
+.teamGrid { text-align: center; }
+.teamGrid .bigList { float: none; }
+.teamGrid .msg { font-size: 80%; }
+
+.totalCostLi { text-align: center; margin-bottom: 20px; }
+
+.totalCostH4 { display: inline; display: none; }
+
 /*# sourceMappingURL=teamGrid.css.map */

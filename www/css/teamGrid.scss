@@ -16,3 +16,31 @@
 	}
 
 }
+
+
+	.showLater {
+		display: none;
+	}
+
+	.teamGrid {
+		.bigList {
+			float: none;
+		}
+		text-align: center;
+		.msg {
+			font-size: 80%;
+		}
+	}
+
+
+.totalCostLi {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.totalCostH4 {
+	
+	display: inline;
+	display: none;
+	//margin-left: 0;
+}

@@ -125,17 +125,24 @@
         interval: 1000 //changes the speed
     });
     function update() {
+        var $box = $(this).closest(".box");
+        console.log($box.find(".num").attr('data-cost1'));
         var adultCost = 20;
         var childCost = 15;
-        if (new Date() > new Date("04/30/2017")) {
+        var cost = "1";
+        if (new Date() > new Date("05/01/2017")) {
             adultCost = 25;
             childCost = 20;
+            cost = "2";
         }
-        $("#totalCost").show().text($("#numAdults").val()*adultCost
-            +$("#numChildren").val()*childCost);
+        $box.find(".showLater").slideDown();
+        //$box.find(".teamDivContainer").slideDown();
+        $box.find(".totalCost").show().text($box.find(".num").val()*$box.find(".num").attr("data-cost"+cost));
     };
     update();
     $('input.input').change(update);
+    $('input.input').keyup(update);
+    $('.calculateTotal').click(update);
     </script>
 
 </body>

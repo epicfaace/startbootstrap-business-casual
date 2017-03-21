@@ -8,6 +8,9 @@ $headerColor: #AA0000;
 $headerColor: black;
 $headerColorHover: #ddee88;
 
+html, body {
+    height: 100%;
+}
 .containerImg {
   position: relative;
   width: 50%;
