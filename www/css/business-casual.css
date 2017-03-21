@@ -50,6 +50,8 @@ hr.short { max-width: 200px; }
 .tagline-divider { margin: 15px auto 3px; max-width: 250px; border-color: #999999; }
 
 .box { margin-bottom: 20px; padding: 5px 15px; background: #fff; background: rgba(255, 255, 255, 0.9); }
+@media only screen and (min-width: 769px) { .box { padding: 20px 30px; } }
+@media only screen and (min-width: 1200px) { .box { padding: 20px 100px; } }
 
 .intro-text { text-transform: uppercase; font-size: 1.25em; font-weight: 400; letter-spacing: 1px; }
 

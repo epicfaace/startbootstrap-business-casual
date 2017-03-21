@@ -158,6 +158,12 @@ hr.short {
     padding: 5px 15px;
     background: #fff;
     background: rgba(255,255,255,0.9);
+    @media only screen and (min-width: 769px) {
+        padding: 20px 30px;
+    }
+    @media only screen and (min-width: 1200px) {
+        padding: 20px 100px;
+    }
 }
 
 .intro-text {
