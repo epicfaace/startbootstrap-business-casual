@@ -130,13 +130,15 @@ footer p { margin: 0; padding: 50px 0; }
 .cordInfoGrid .readMore { display: inline-block; margin-bottom: 30px; }
 @media only screen and (min-width: 769px) { .cordInfoGrid img { margin-bottom: 30px; } }
 
+#carousel-example-generic2 img { margin-bottom: 0px; }
+
 .absolute { position: absolute; top: 100%; z-index: 50; color: white; }
 
 blockquote { font-style: italic; }
 
 .teamGrid img { margin: auto; }
 
-.btnCenter { margin: auto; display: block; text-decoration: none; margin-top: 30px; }
+.btnCenter { margin: auto; display: block; text-decoration: none; }
 
 .btnSide { margin: 5px; margin-top: 20px; }
 

@@ -19,4 +19,6 @@
 .cordInfoGrid .readMore { display: inline-block; margin-bottom: 30px; }
 @media only screen and (min-width: 769px) { .cordInfoGrid img { margin-bottom: 30px; } }
 
+#carousel-example-generic2 img { margin-bottom: 0px; }
+
 /*# sourceMappingURL=main.css.map */
