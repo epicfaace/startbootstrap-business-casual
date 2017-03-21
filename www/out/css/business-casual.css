@@ -106,7 +106,7 @@ blockquote { font-style: italic; }
 
 .modal { font-size: 80%; }
 .modal h1 { font-size: 20px; }
-.modal img { margin: 20px; clear: both; display: block; max-width: 100%; height: auto; }
+.modal img { margin: 20px; clear: both; display: block; max-width: 90%; height: auto; }
 
 .cordInfoGrid h3 { text-transform: initial; font-size: 100%; }
 
