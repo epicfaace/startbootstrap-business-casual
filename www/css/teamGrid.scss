@@ -30,9 +30,15 @@
 		p, .msg, .bigList li {
 			font-size: 80%;
 		}
+		p.fontSmall {
+			font-size: 60%;
+		}
 		.dropdown-menu {
     left: 50% !important;
     margin-left: -70px;
+		}
+		.howManyChildren {
+			display: none;
 		}
 	}
 

@@ -126,7 +126,7 @@
     });
     function update() {
         var $box = $(this).closest(".box");
-        console.log($box.find(".num").attr('data-cost1'));
+        console.log($box.find(".num").data('cost1'));
         var adultCost = 20;
         var childCost = 15;
         var cost = "1";
@@ -140,12 +140,10 @@
         var total = 0;
         //$box.find(".num").val()*$box.find(".num").attr("data-cost"+cost)
         $box.find(".num").each(function() {
-            total += $(this).val()*$(this).attr("data-cost"+cost)
+            total += $(this).val()*$(this).data("cost"+cost)
         })
         $box.find(".totalCost").show().text(total);
-        $('html, body').animate({
-        scrollTop: $box.find(".register").offset().top
-        }, 500);
+        animate($box);
     };
     //update();
     $('input.input').change(update);
@@ -153,9 +151,28 @@
     $('.calculateTotal').click(update);
 
     $(".dropdown-child a").click(function() {
-        $(".childTab").removeClass("showLater");
-        $($(this).data("target")).addClass("showLater");
+        var $box = $(this).closest(".box");
+        var $num = $box.find(".num");
+        $(".dropdown-toggle").html($(this).text()+'\n<span class="caret"></span>');
+        $(".howManyChildren").slideDown();
+        var grade = $(this).data("target");
+        $num.data("cost1", $num.data("cost1-"+grade.toLowerCase()));
+        $num.data("cost2", $num.data("cost2-"+grade.toLowerCase()));
+        
+        //$(".howManyChildren").data("cost1", "")
+        $(".childTab").hide().removeClass("showLater");
+        $("."+grade).addClass("showLater");
+        animate($box);
     });
+
+    function animate($box) {
+        var minTop = $box.find(".register").offset().top;
+        if ($('body')[0].scrollTop < minTop) {
+            $('html, body').animate({
+            scrollTop: minTop
+            }, 500);
+        }
+    }
     </script>
 
 </body>
