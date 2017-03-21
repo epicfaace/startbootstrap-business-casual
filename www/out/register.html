@@ -485,6 +485,9 @@
     $(".dropdown-child a").click(function() {
         var $box = $(this).closest(".box");
         var $num = $box.find(".num");
+        
+        $box.find(".showLater").hide();
+
         $(".dropdown-toggle").html($(this).text()+'\n<span class="caret"></span>');
         $(".howManyChildren").slideDown();
         var grade = $(this).data("target");
