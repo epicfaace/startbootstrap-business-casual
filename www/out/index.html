@@ -47,6 +47,12 @@
             }
         });
     })
+
+    function scrollTo(ele) {
+        $('html, body').animate({
+        scrollTop: $(ele).offset().top
+        }, 500);
+    }
     </script>
   <!-- partial -->
 
@@ -132,7 +138,7 @@
 
         <div class="row box">
             <div class="">
-                <div class="col-lg-12">
+                <div class="col-xs-12">
                     <h4 class="notbold text-center">Chinmaya Mission Alpharetta presents</h4>
                     <h3 class="notbold text-center">A <strong>5k walkathon</strong> for <strong>CORD</strong></h3>
                     <h4 class="notbold text-center"><strong>Changing</strong> lives</h4>
@@ -182,11 +188,16 @@
                     </div>
                     
                 </div>
+                <div class="col-xs-12 text-center">
+                <a href="register.html"><button class="btn btn-lg btnCenter">Register now</button></a>
+                <a onclick="scrollTo('#learn');"><button class="btn btn-lg btnCenter">Learn More</button></a>
+                </div>
+
                 </div>
                 </div>
 
 
-        <div class="row box">
+        <div class="row box highlights" id="learn">
         <h3 class="notbold text-center"><strong>Lighting up</strong> the path</h2>
                     </h3>
                     <hr class="short">
@@ -199,12 +210,18 @@
                         <p class="text-muted">Enjoy the beautiful weather and come for the 5K walkathon. It's in Fowler Park.</p>
                     </div>
                 </div>
+                <div class="col-xs-12 visible-xs">
+                    <img src="img/walk14.JPG" class="img-responsive img-full"/>
+                </div>
                 <div class="col-sm-3 col-xs-12 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-comments-o text-primary sr-icons"></i>
                         <h3>Socialize</h3>
                         <p class="text-muted">Spend a great afternoon with your friends. Invite your friends to come along!</p>
                     </div>
+                </div>
+                <div class="col-xs-12 visible-xs">
+                    <img src="img/walk3.JPG" class="img-responsive img-full"/>
                 </div>
                 <div class="col-sm-3 col-xs-12 text-center">
                     <div class="service-box">
@@ -213,6 +230,9 @@
                         <p class="text-muted">Compete among teams to raise the most money. The top team(s) get a prize!</p>
                     </div>
                 </div>
+                <div class="col-xs-12 visible-xs">
+                    <img src="img/walk11.JPG" class="img-responsive img-full"/>
+                </div>
                 <div class="col-sm-3 col-xs-12 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-handshake-o text-primary sr-icons"></i>
@@ -220,15 +240,29 @@
                         <p class="text-muted">Through your donation, you will be helping CORD.<br> <a href="about.html">Learn more.</a></p>
                     </div>
                 </div>
+                <div class="col-xs-12 visible-xs">
+                    <img src="img/walk13.JPG" class="img-responsive img-full"/>
+                </div>
                 <div class="col-xs-12">
                     <a href="register.html"><button class="btn btn-lg btnCenter">Register now!</button></a>
                     <hr class="short">
-                    <div id="carousel-example-generic" class="carousel slide">
+                    <div id="carousel-example-generic2" class="carousel slide">
                         <!-- Indicators -->
                         <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="6"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="7"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="8"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="9"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="10"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="11"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="12"></li>
+                            <li data-target="#carousel-example-generic2" data-slide-to="13"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->
@@ -242,13 +276,46 @@
                             <div class="item">
                                 <img class="img-responsive img-full" src="img/walk3.JPG" alt="">
                             </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk4.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk5.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk6.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk7.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk8.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk9.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk10.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk11.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk12.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk13.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/walk14.JPG" alt="">
+                            </div>
                         </div>
 
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
                             <span class="icon-prev"></span>
                         </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
                             <span class="icon-next"></span>
                         </a>
                     </div>
@@ -411,9 +478,11 @@
     
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+    $(function() {
+        $('.carousel').carousel({
+            interval: 500000 //changes the speed
+        })
+    });
     </script>
 
 </body>

@@ -15,10 +15,10 @@ html, body { height: 100%; }
 
 .text { color: white; font-size: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 
-.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
-
-.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
+/*.videoWrapper { position: relative; padding-bottom: 56.25%;  padding-top: 25px; height: 0;
+}
+.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}*/
 body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../img/Walkathon Image 2.png") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 700; letter-spacing: 1px; }
@@ -109,6 +109,27 @@ footer p { margin: 0; padding: 50px 0; }
 
 .totalCostH4 { display: inline; display: none; }
 
+.wrapper { width: 100%; margin: 30px auto; padding: 0 20px; }
+
+.youtube { background-color: #000; margin-bottom: 30px; position: relative; padding-top: 56.25%; overflow: hidden; cursor: pointer; }
+
+.youtube img { width: 100%; top: -16.82%; left: 0; opacity: 0.7; }
+
+.youtube .play-button { width: 90px; height: 60px; background-color: #333; box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); z-index: 1; opacity: 0.8; border-radius: 6px; }
+
+.youtube .play-button:before { content: ""; border-style: solid; border-width: 15px 0 15px 26.0px; border-color: transparent transparent transparent #fff; }
+
+.youtube img, .youtube .play-button { cursor: pointer; }
+
+.youtube img, .youtube iframe, .youtube .play-button, .youtube .play-button:before { position: absolute; }
+
+.youtube .play-button, .youtube .play-button:before { top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); }
+
+.youtube iframe { height: 100%; width: 100%; top: 0; left: 0; }
+
+.cordInfoGrid .readMore { display: inline-block; margin-bottom: 30px; }
+@media only screen and (min-width: 769px) { .cordInfoGrid img { margin-bottom: 30px; } }
+
 .absolute { position: absolute; top: 100%; z-index: 50; color: white; }
 
 blockquote { font-style: italic; }
@@ -116,6 +137,8 @@ blockquote { font-style: italic; }
 .teamGrid img { margin: auto; }
 
 .btnCenter { margin: auto; display: block; text-decoration: none; margin-top: 30px; }
+
+.btnSide { margin: 5px; margin-top: 20px; }
 
 .text-primary { color: #551a8b; }
 
@@ -132,5 +155,9 @@ blockquote { font-style: italic; }
 .bigList { list-style-type: none; font-size: 20px; }
 .bigList li { margin-bottom: 20px; }
 .bigList input { float: right; text-align: right; width: 100px; }
+
+.highlights img { margin-bottom: 35px; }
+
+#carousel-example-generic2 img { margin: none; }
 
 /*# sourceMappingURL=business-casual.css.map */

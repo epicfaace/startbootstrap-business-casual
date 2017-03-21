@@ -41,4 +41,10 @@
             }
         });
     })
+
+    function scrollTo(ele) {
+        $('html, body').animate({
+        scrollTop: $(ele).offset().top
+        }, 500);
+    }
     </script>
